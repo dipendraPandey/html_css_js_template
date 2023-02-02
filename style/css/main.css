@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  outline: none !important;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: #467eb7;
+}
+header {
+  position: relative;
+  z-index: 100;
+}
+p {
+  font-size: 1.15rem;
+}
+.navbar {
+  background: transparent !important;
+  transition: 0.8s;
+}
+.navbar.scrolled {
+  background: rgb(1, 37, 83) !important;
+  transition: 2s;
+}
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #000;
+  background: rgb(72, 77, 217);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255, 1);
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:visited {
+  color: rgba(255, 255, 255, 1);
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.banner {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: url(images/image9.jpg);
+  background-size: cover;
+  margin-bottom: 0;
+}
+.banner::before,
+.contact::before,
+.sec2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(rgb(1, 37, 83), transparent);
+  pointer-events: none;
+}
+.banner::after,
+.contact::after,
+.sec2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(360deg, rgb(1, 37, 83), transparent);
+  pointer-events: none;
+}
+.height100p {
+  height: 100vh;
+}
+.h100 {
+  height: 100%;
+}
+.contentBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+}
+.contentBox h1 {
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+.contentBox p {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.sec1 {
+  padding: 100px 0;
+  background: rgb(1, 37, 83);
+}
+.headerText {
+  color: #fff;
+}
+.headerText h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.placeBox {
+  position: relative;
+  max-width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  background: rgb(1, 37, 83);
+  margin-top: 30px;
+}
+.placeBox .imageBox {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.placeBox .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: baseline;
+  align-items: flex-end;
+}
+.placeBox .content h3 {
+  position: relative;
+  margin: 0;
+  padding: 10px;
+  background: rgb(1, 37, 83);
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+.placeBox .content h3 span {
+  font-size: 16px;
+  font-weight: 500;
+}
+.sec2 {
+  position: relative;
+  background: url(images/image5.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+.sec2 h2 {
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4.5rem;
+}
+.btnD1 {
+  border: 2px solid #fff;
+  color: rgb(1, 37, 83);
+  background: #fff;
+  border-radius: 50px;
+  padding: 15px 50px;
+  font-size: 1.15rem;
+  outline: none;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.blog {
+  position: relative;
+  padding: 100px 0;
+  background: rgb(1, 37, 83);
+}
+
+.blogpost {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  background: #fff;
+}
+.blogpost .imageBox {
+  height: 400px;
+}
+.blogpost .imageBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blogpost .content {
+  padding: 15px;
+}
+.blogpost .content h1 {
+  margin: 0;
+  padding: 0 0 10px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.btnD2,
+.btnD2:hover {
+  background: rgb(1, 37, 83);
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  float: right;
+}
+.contact {
+  position: relative;
+  padding: 100px 0;
+  background: url(images/image10.jpg);
+  background-size: cover;
+  min-height: 100vh;
+}
+.contact form {
+  position: relative;
+  z-index: 100;
+}
+.contact .form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(10, 54, 108, 0.316);
+  height: 50px;
+  border-radius: 0;
+  background: rgba(4, 33, 77, 0.6);
+  color: rgb(7, 52, 120);
+  font-size: 1.25rem;
+}
+.contact .form-control:focus,
+.contact .form-control:hover {
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+.contact .textarea {
+  min-height: 100px;
+}
+.contact label {
+  color: rgb(4, 44, 93);
+  font-size: 1.25rem;
+}
+footer {
+  background: rgb(1, 37, 83);
+  padding: 50px 0 0;
+}
+.sci {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sci li {
+  list-style: none;
+  margin: 0 20px;
+}
+.sci li a {
+  color: rgba(62, 123, 238, 0.848);
+  font-size: 2em;
+  transition: 0.5s;
+}
+.sci li a:hover {
+  color: rgba(13, 60, 148, 0.848);
+}
+.cpryt {
+  color: rgba(62, 123, 238, 0.848);
+  text-align: center;
+  margin-top: 20px;
+}
